@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* font-family: 'Roboto', sans-serif; */
+/* font-family: 'Courgette', cursive; */
+
+@font-face {
+    font-family: myFont1;
+    src: url(../fonts/din.ttf);
+}
+
+@font-face {
+    font-family: myFont2;
+    src: url(../fonts/amazone.otf);
+}
+
+@font-face {
+    font-family: myFont3;
+    src: url(../fonts/geogtq.otf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    background: #5c5b5b;
+}
+
+a {
+    text-decoration: none;
+  }
+
+ul {
+    list-style: none;
+  }
+
+
+/* ----- Main Containers ----- */
+
+.divContainer {
+    background: #5c5b5b;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.divContainer {
+display: flex;
+flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.divContain-title {
+    text-align: center;
+    width: 100%;
+}
+
+.divContainer-title h3 {
+    font-family: myFont1;
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #fff;
+    color: #AA0A90; 
+    text-shadow: 1px 1px #fff;
+    padding-top: 10px;
+    text-align: left;
+    margin-left: 120px; 
+}
+
+.divContainer-subtitle h4 {
+    font-family: myFont2;
+    color: #fff;
+    text-shadow: 4px 4px #AA0A90;
+    font-size: 30px;
+    font-weight: 200;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    margin-left: 150px;
+    margin-right: 40%;
+}
+
+/* ----- Media Queries for Main Containers ----- */
+
+@media (max-width: 480px) {
+
+     .divContainer {
+        display: flex;
+        width:100%;
+    }
+
+    .divContainer-title {
+        display: flex;
+        flex-direction: row;
+    width: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+        padding-left: 10px;
+    }
+
+    .divContainer-title h3 {
+        font-size: 30px;
+        width: 100%;
+        text-align: center;
+        margin-left: 0px;
+        padding-left: 0px;
+    } 
+
+    .divContainer-subtitle h4 {
+        width: 100%;
+        align-items: center;
+        justify-content: center; 
+        text-align: center;
+        margin-left: 0px; 
+        padding: 0;
+        width: 100%;
+        font-size: 18px;
+        font-family: 'Courgette', cursive;
+    } 
+
+} 
+
+/* ----- Fixed Navbar Section ----- */
+
+.bg-color {
+    background: #AA0A90;
+}
+
+#title {
+    text-align: center;
+    font-family: myFont1;
+    font-size: 48px;
+    letter-spacing: 12px;
+    text-decoration-line: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#text2 {
+    font-family: myFont2;
+    font-size: 34px;
+    font-weight: 400;
+    text-align: center;
+    color: #fff;
+    letter-spacing: 4px;
+    margin-bottom: 12px;
+}
+
+#text3 {
+    font-family: myFont3;
+    letter-spacing: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+    padding-bottom: 12px;
+    padding-left: 15px;
+}
+
+#text4 {
+    font-family: myFont3;
+    letter-spacing: 2px;
+    font-size: 18px;
+    word-spacing: 3px;
+    text-align: center;
+    color: #000;
+    padding-top: 15px;
+    padding-bottom: 12px;
+}
+
+ul.navbar-nav {
+    width: 90%;
+    min-height: auto;
+}
+
+.nav-item a {
+    font-family: 'Courgette', cursive;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}
+
+.navbar .nav-item a:hover {
+    background-color: #fff; 
+    border-radius: 35%;
+    color: #000;
+    width: 100%;
+    padding: 3px;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-toggler icon {
+    justify-self: center;
+    align-self: center;
+    margin-right: 50px;
+    border-color: #000;
+    border-width: 2px;
+    color: #fff;  
+}
+
+.navbar-toggler {
+        justify-self: center;
+        align-self: center;
+        margin-right: 50px;
+        border-color: #000;
+        border-width: 2px;
+        color: #fff;  
+}
+
+#home-tag {
+   background-color: #fff;
+   border-radius: 30%;
+} 
+
+.button-close-nav {
+    width: 50px;
+    justify-self: center;
+    align-self: center;
+    margin-right: 40px;
+    border-radius: 5px;
+} 
+
+/* ----- Media Queries Section for Navbar ----- */
+
+@media (min-width: 768px) {
+    .sidebar{
+        background-color: rgba(98, 57, 91, 0.7);
+        backdrop-filter: blur(10px);
+    } 
+}
+
+@media (max-width: 991px) {
+    .sidebar{
+        background-color: rgba(98, 57, 91, 0.7);
+        backdrop-filter: blur(10px);
+    } 
+}
+
+@media (max-width: 600px) {
+    .sidebar{
+        background-color: rgba(98, 57, 91, 0.7);
+        backdrop-filter: blur(10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar{
+        background-color: rgba(98, 57, 91, 0.7);
+        backdrop-filter: blur(10px);
+    }
+}
